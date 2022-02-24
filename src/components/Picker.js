@@ -885,7 +885,7 @@ function Picker({
         <>
             {SelectedItemIconComponent}
             <Text style={_labelStyle} {...labelProps}>
-                {_selectedItemLabel.length > 17 ? _selectedItemLabel.substring(0, 17) + "..." : _selectedItemLabel}
+                {_selectedItemLabel.length > 15 ? _selectedItemLabel.substring(0, 15) + "..." : _selectedItemLabel}
             </Text>
         </>
     ), [SelectedItemIconComponent, _labelStyle, labelProps, _selectedItemLabel]);
